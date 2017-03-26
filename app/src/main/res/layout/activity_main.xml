@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context="com.android.cristiangallego.intents.MainActivity">
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintNombre"
+        android:inputType="textPersonName" />
+
+    <DatePicker
+        android:id="@+id/dpFechaNac"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_weight="0.46"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintTelefono"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintEmail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintHescripcion"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnSiguiente_Clic"
+        android:text="@string/botonSiguiente"
+        android:textAlignment="center" />
+</LinearLayout>
+
+

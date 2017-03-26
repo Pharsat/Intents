@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Intents</string>
+    <string name="botonSiguiente">Siguiente</string>
+    <string name="hintNombre">Nombre Completo</string>
+    <string name="hintHescripcion">Descripción</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintTelefono">Teléfono</string>
+    <string name="lblTituloConfirmar">Confirmar datos</string>
+    <string name="parametroUsuario">Usuario</string>
+    <string name="botonEditarContactos">Editar Datos</string>
+</resources>
