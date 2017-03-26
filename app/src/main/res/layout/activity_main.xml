@@ -13,13 +13,19 @@
     android:weightSum="1"
     tools:context="com.android.cristiangallego.intents.MainActivity">
 
-    <EditText
-        android:id="@+id/txtNombre"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/hintNombre"
-        android:inputType="textPersonName" />
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintNombre"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
 
     <DatePicker
         android:id="@+id/dpFechaNac"
@@ -29,29 +35,44 @@
         android:calendarViewShown="false"
         android:datePickerMode="spinner" />
 
-    <EditText
-        android:id="@+id/txtTelefono"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/hintTelefono"
-        android:inputType="phone" />
+        android:layout_marginTop="20dp">
 
-    <EditText
-        android:id="@+id/txtEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/hintEmail"
-        android:inputType="textEmailAddress" />
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintTelefono"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/txtDescripcion"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/hintHescripcion"
-        android:inputType="textMultiLine" />
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintEmail"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintHescripcion"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/btnEditar"
